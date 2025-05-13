@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo | Hombres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/png" href="imagenes/Favicon/wave-icon.png" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <section class="encabezado">
+      <div class="encabezado-elementos">
+        <h1 class="titulo-sitio">
+          <a href="index.html" class="logo-inicio">Nausicaä</a>
+        </h1>
+        <img src="imagenes/Iconos/perfil.png" alt="perfil" class="perfil" />
+        <img src="imagenes/Iconos/carrito.png" alt="carrito" class="carrito" />
+      </div>
+    </section>
+
+    <!-- Menú de navegación -->
+    <nav class="menu-nav">
+      <ul class="menu-lista">
+        <li class="pagina">
+          <a href="index.html" class="menu-enlace">INICIO</a>
+        </li>
+        <li class="pagina">
+          <a href="catalogo.html" class="menu-enlace">CATÁLOGO</a>
+        </li>
+        <li class="pagina-actual">
+          <a href="hombre.html" class="menu-enlace">HOMBRE</a>
+        </li>
+        <li class="pagina">
+          <a href="mujer.html" class="menu-enlace">MUJER</a>
+        </li>
+        <li class="pagina"><a>NIÑOS</a></li>
+        <li class="pagina"><a>EQUIPO</a></li>
+        <li class="pagina">
+          <a href="sobre.html" class="menu-enlace">CONÓCENOS</a>
+        </li>
+        <input
+          type="search"
+          name="busqueda"
+          class="buscador"
+          placeholder=" 🔍 Buscar..."
+        />
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+      <!-- Filtros -->
+      <section class="section">
+        <div class="barra-filtros">
+          <div class="filtros">
+            <h2>Filtros</h2>
+
+            <!-- Filtro: Color -->
+            <div class="filtro">
+              <h3>Color</h3>
+              <label><input type="checkbox" class="casilla" /> Rojo</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Azul</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Amarillo</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Verde</label>
+            </div>
+
+            <!-- Filtro: Tallas -->
+            <div class="filtro">
+              <h3>Tallas</h3>
+              <label><input type="checkbox" class="casilla" /> CH</label><br />
+              <label><input type="checkbox" class="casilla" /> M</label><br />
+              <label><input type="checkbox" class="casilla" /> G</label><br />
+              <label><input type="checkbox" class="casilla" /> XG</label>
+            </div>
+
+            <!-- Filtro: Tipo de producto -->
+            <div class="filtro">
+              <h3 id="h3-filtro">Tipo de producto</h3>
+              <label><input type="checkbox" class="casilla" /> Ropa</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Calzado</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Equipo</label
+              ><br />
+              <label><input type="checkbox" class="casilla" /> Accesorio</label>
+            </div>
+
+            <!-- Filtro: Precios -->
+            <div id="filtro-precios">
+              <h3>Precios</h3>
+              <label
+                ><input type="checkbox" class="casilla" /> $100 - $300</label
+              ><br />
+              <label
+                ><input type="checkbox" class="casilla" /> $300 - $800</label
+              ><br />
+              <label
+                ><input type="checkbox" class="casilla" /> $800 - $1,000</label
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catálogo de productos -->
+      <aside class="contenido-catalogo">
+        <h2>Ropa y calzado para hombres</h2>
+        <div class="card-container">
+          <!-- Producto 1 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="card-catalogo">
+            <img
+              src="https://placehold.co/180x180"
+              alt=""
+              class="img-tarjeta"
+            />
+            <div class="card-info">
+              <h4 class="card-titulo">$$$</h4>
+              <h5 class="card-subtitulo">Artículo</h5>
+              <p class="card-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+              <img
+                src="imagenes/Iconos/estrellas1.png"
+                alt="Calificación"
+                class="estrellas"
+              />
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="contenido-footer-contenedor">
+        <article class="contenido-footer">
+          <h4>Atención al cliente</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quia
+            perspiciatis quis cum illum minima nobis alias officia reprehenderit
+            voluptates, architecto, sapiente ipsa eos vel cupiditate commodi,
+            dolorum quisquam.
+          </p>
+        </article>
+        <article class="contenido-footer">
+          <h4>Contacto</h4>
+          <h5>Teléfonos:</h5>
+          <p><a href="tel:+00 00 0000 0000">+00 00 0000 0000</a></p>
+          <p><a href="tel:+00 00 0000 0000">+00 00 0000 0000</a></p>
+          <h5>Correo electrónico:</h5>
+          <p>
+            <a href="mailto:correocontacto@correo.com" target="_blank"
+              >correocontacto@correo.com</a
+            >
+          </p>
+        </article>
+        <article class="contenido-footer">
+          <h4>Preguntas frecuentes</h4>
+          <ol>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ol>
+        </article>
+      </div>
+      <div class="contenido-footer-imagenes">
+        <ul class="redes-sociales-lista">
+          <li id="whatsapp">
+            <a href="https://www.whatsapp.com/" target="_blank"></a>
+          </li>
+          <li id="facebook">
+            <a href="https://www.facebook.com/" target="_blank"></a>
+          </li>
+          <li id="instagram">
+            <a href="https://www.instagram.com/" target="_blank"></a>
+          </li>
+          <li id="twitter"><a href="https://x.com/" target="_blank"></a></li>
+        </ul>
+        <p>© 2024 INTEGRADORA</p>
+      </div>
+    </footer>
+  </body>
+</html>
